@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Art</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .red {
+        background-color: #f50c0c;
+      }
+      .yellow {
+        background-color: #f7dc6f;
+      }
+      .white {
+        background-color: #fff;
+      }
+
+      .grid-container {
+        height: 700px;
+        width: 700px;
+        background-color: #0f0e0e;
+        display: grid;
+        grid-template-columns: 100px 200px 200px 100px 100px;
+        grid-template-rows: repeat(7, 100px);
+      }
+      .grid-container > div {
+        border: 2px solid black; /* Add consistent borders to all grid items */
+        box-sizing: border-box; /* Ensure borders are included in item dimensions */
+      }
+
+      .item1 {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      .item3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .item4,
+      .item5 {
+        grid-row: span 2;
+      }
+
+      .item6,
+      .item7 {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .item8 {
+        grid-row: span 2;
+      }
+      .item9 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: span 3;
+      }
+      .item10 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row: span 3;
+      }
+      .item11 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row: span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item1 red">1</div>
+      <div class="item2 yellow">2</div>
+      <div class="item3 white">3</div>
+      <div class="item4 white">4</div>
+      <div class="item5 white">5</div>
+      <div class="item6 white">6</div>
+      <div class="item7 yellow">7</div>
+      <div class="item8 white">8</div>
+      <div class="item9 white">9</div>
+      <div class="item10 white">10</div>
+      <div class="item11 yellow">11</div>
+    </div>
+  </body>
+</html>
