@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #060606;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+}
+
+img {
+  border: 5px solid #fff;
+  height: 400px;
+}
+.container {
+  background-color: #3c3b3b;
+  height: 600px;
+  width: 800px;
+  padding: 60px;
+  text-align: center;
+}
